@@ -1,7 +1,7 @@
-package conf
+package config
 
 import (
-	"io/ioutil"
+	"io/ioutils"
 	"strings"
 
 	yaml "gopkg.in/yaml.v2"
@@ -12,7 +12,7 @@ var Dictinary *map[interface{}]interface{}
 
 // LoadLocales 读取国际化文件
 func LoadLocales(path string) error {
-	data, err := ioutil.ReadFile(path)
+	data, err := ioutils.ReadFile(path)
 	if err != nil {
 		return err
 	}

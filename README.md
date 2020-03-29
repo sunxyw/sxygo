@@ -29,11 +29,12 @@ LwGO: 基于 [Singo](https://github.com/Gourouting/singo) 的简单框架
 1. controllers 文件夹负责控制层代码，根据输入的数据进行相应操作并输出结果
 2. models 文件夹负责存储数据库模型和数据库操作相关的代码
 3. services 负责处理比较复杂的业务，把业务代码模型化可以有效提高业务代码的质量（比如用户注册，充值，下单等）
-4. serializers 储存通用的 json 模型，把 model 得到的数据库模型转换成 api 需要的 json 对象
+4. transformers 储存通用的 json 模型，把 models 得到的数据库模型转换成 controllers 需要的 json 对象
 5. cache 负责 redis 缓存相关的代码
 6. auth 权限控制文件夹
 7. utils 一些通用的小工具
 8. config 放一些静态存放的配置文件，其中 locales 内放置翻译相关的配置文件
+9. middleware 文件夹存放中间件
 
 ## Godotenv
 

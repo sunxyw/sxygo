@@ -1,6 +1,6 @@
-package serializer
+package transformers
 
-import "lwgo/model"
+import "lwgo/models"
 
 // User 用户序列化器
 type User struct {
@@ -13,7 +13,7 @@ type User struct {
 }
 
 // BuildUser 序列化用户
-func BuildUser(user model.User) User {
+func BuildUser(user models.User) User {
 	return User{
 		ID:        user.ID,
 		UserName:  user.UserName,
@@ -25,7 +25,7 @@ func BuildUser(user model.User) User {
 }
 
 // BuildUserResponse 序列化用户响应
-func BuildUserResponse(user model.User) Response {
+func BuildUserResponse(user models.User) Response {
 	return Response{
 		Data: BuildUser(user),
 	}

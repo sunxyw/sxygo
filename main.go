@@ -1,13 +1,13 @@
 package main
 
 import (
-	"lwgo/conf"
+	"lwgo/config"
 	"lwgo/server"
 )
 
 func main() {
 	// 从配置文件读取配置
-	conf.Init()
+	config.Init()
 
 	// 装载路由
 	r := server.NewRouter()

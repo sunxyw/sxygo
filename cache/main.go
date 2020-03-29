@@ -2,7 +2,7 @@ package cache
 
 import (
 	"os"
-	"lwgo/util"
+	"lwgo/utils"
 	"strconv"
 
 	"github.com/go-redis/redis"
@@ -24,7 +24,7 @@ func Redis() {
 	_, err := client.Ping().Result()
 
 	if err != nil {
-		util.Log().Panic("连接Redis不成功", err)
+		utils.Log().Panic("连接Redis不成功", err)
 	}
 
 	RedisClient = client
