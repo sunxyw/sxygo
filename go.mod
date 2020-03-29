@@ -1,4 +1,4 @@
-module singo
+module lwgo
 
 go 1.12
 
