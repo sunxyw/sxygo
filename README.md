@@ -15,6 +15,9 @@ LwGO: 基于 [Singo](https://github.com/Gourouting/singo) 的简单框架
 6. [Gin-Cors](https://github.com/gin-contrib/cors)：Gin 框架提供的跨域中间件
 7. 自行实现了国际化 i18n 的一些基本功能
 8. 本项目是使用基于 cookie 实现的 session 来保存登录状态的，如果需要可以自行修改为 token 验证
+9. [Logrus](https://github.com/sirupsen/logrus)：知名的日志系统
+10. 自行实现了生成 RequestID 及记录请求信息的中间件
+11. 实现了日志分割功能，默认每天分割一次日志文件
 
 本项目已经预先实现了一些常用的代码方便参考和复用：
 
@@ -35,18 +38,26 @@ LwGO: 基于 [Singo](https://github.com/Gourouting/singo) 的简单框架
 7. utils 一些通用的小工具
 8. config 放一些静态存放的配置文件，其中 locales 内放置翻译相关的配置文件
 9. middleware 文件夹存放中间件
+10. logs 文件夹存放日志文件，其中 latest.log 文件为最新的日志
+11. tmp 文件夹存放运行时生成的临时文件
 
 ## Godotenv
 
 项目在启动的时候依赖以下环境变量，但是在也可以在项目根目录创建.env 文件设置环境变量便于使用
 
 ```shell
-MYSQL_DSN="db_user:db_password@/db_name?charset=utf8&parseTime=True&loc=Local" # Mysql连接地址
-REDIS_ADDR="127.0.0.1:6379" # Redis端口和地址
-REDIS_PW="" # Redis连接密码
-REDIS_DB="" # Redis库从0到10
-SESSION_SECRET="setOnProducation" # Seesion密钥，必须设置而且不要泄露
-GIN_MODE="debug" # Gin 运行模式
+DB_DRIVER=mysql # 选用的数据库驱动（目前仅支持 mysql）
+DB_HOST=127.0.0.1 # 数据库地址
+DB_PORT=3306 # 数据库端口
+DB_USERNAME=root # 数据库用户名
+DB_PASSWORD=password # 数据库密码
+DB_DATABASE=onlytest # 数据库名称
+
+REDIS_ADDR="127.0.0.1:6379" # Redis 端口和地址
+REDIS_PW="" # Redis 连接密码
+REDIS_DB="" # Redis 库从0到10
+SESSION_SECRET="setOnProducation" # Session 密钥，必须设置而且不要泄露
+DEBUG=true # 是否开启调试模式
 LOG_LEVEL="debug" # 日志记录等级
 ```
 
@@ -56,13 +67,14 @@ LOG_LEVEL="debug" # 日志记录等级
 
 ```shell
 go mod init lwgo
-go run main.go // 自动安装
+go run main.go # 自动安装依赖
 ```
 
 ## 运行
 
 ```shell
-go run main.go
+air # 热更新
+go run main.go # 正常运行
 ```
 
 项目运行后启动在 3000 端口（可以修改，参考 gin 文档)

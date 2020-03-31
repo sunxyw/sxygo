@@ -1,0 +1,90 @@
+[2020-03-31 15:13:45] [DEBU] 调试模式已开启
+[2020-03-31 15:13:45] [FATA] 无法连接至数据库 dial tcp 127.0.0.1:3306: connect: connection refused
+[2020-03-31 15:18:24] [DEBU] 调试模式已开启
+[2020-03-31 15:18:24] [FATA] 无法连接至数据库 dial tcp 127.0.0.1:3306: connect: connection refused
+[2020-03-31 15:18:48] [DEBU] 调试模式已开启
+[2020-03-31 15:18:48] [ERRO] [rest] hh
+[2020-03-31 15:18:48] [INFO] HEllo
+[2020-03-31 15:19:09] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 15:19:09] [INFO] | 200 |      1.2963ms |             ::1 | GET | /status |
+[2020-03-31 15:19:09] [INFO] | 404 |        11.3µs |             ::1 | GET | /favicon.ico |
+[2020-03-31 17:56:33] [DEBU] 调试模式已开启
+[2020-03-31 17:56:33] [ERRO] [rest] hh
+[2020-03-31 17:56:33] [INFO] HEllo
+[2020-03-31 17:56:39] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 17:56:39] [INFO] [::1] [GET /status] | 200 |      1.1695ms |             ::1 | GET | /status |
+[2020-03-31 18:14:29] [DEBU] 调试模式已开启
+[2020-03-31 18:14:29] [ERRO] [rest] hh
+[2020-03-31 18:14:29] [INFO] HEllo
+[2020-03-31 18:14:35] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:14:35] [INFO] [::1] [GET /status sunxyw-laptop/Du5Gahefiq-000001] | 200 |      1.2046ms |             ::1 | GET | /status |
+[2020-03-31 18:16:02] [DEBU] 调试模式已开启
+[2020-03-31 18:16:02] [ERRO] [rest] hh
+[2020-03-31 18:16:02] [INFO] HEllo
+[2020-03-31 18:16:55] [DEBU] 调试模式已开启
+[2020-03-31 18:16:55] [ERRO] [rest] hh
+[2020-03-31 18:16:55] [INFO] HEllo
+[2020-03-31 18:17:03] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:17:03] [INFO] [192.168.1.102] [GET /status sunxyw-laptop/mtcRV0n6IE-000001] | 200 |      1.3557ms |   192.168.1.102 | GET | /status |
+[2020-03-31 18:17:03] [INFO] [192.168.1.102] [GET /favicon.ico sunxyw-laptop/mtcRV0n6IE-000002] | 404 |          19µs |   192.168.1.102 | GET | /favicon.ico |
+[2020-03-31 18:22:22] [DEBU] 调试模式已开启
+[2020-03-31 18:22:22] [ERRO] [rest] hh
+[2020-03-31 18:22:22] [INFO] HEllo
+[2020-03-31 18:22:44] [DEBU] 调试模式已开启
+[2020-03-31 18:22:44] [ERRO] [rest] hh
+[2020-03-31 18:22:44] [INFO] HEllo
+[2020-03-31 18:22:51] [DEBU] 调试模式已开启
+[2020-03-31 18:22:51] [ERRO] [rest] hh
+[2020-03-31 18:22:51] [INFO] HEllo
+[2020-03-31 18:22:54] [DEBU] 调试模式已开启
+[2020-03-31 18:22:54] [ERRO] [rest] hh
+[2020-03-31 18:22:54] [INFO] HEllo
+[2020-03-31 18:23:40] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:23:40] [INFO] [::1] [GET /status 76aaa419-6c7d-4945-aadc-75322bc6b854] | 200 |      1.9962ms |             ::1 | GET | /status |
+[2020-03-31 18:24:03] [DEBU] 调试模式已开启
+[2020-03-31 18:24:03] [ERRO] [rest] hh
+[2020-03-31 18:24:03] [INFO] HEllo
+[2020-03-31 18:24:04] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:24:04] [INFO] [2a4642ab-b015-4fcf-be7f-d1e36328a98b] [GET /status] | 200 |       858.7µs |             ::1 | GET | /status |
+[2020-03-31 18:24:39] [DEBU] 调试模式已开启
+[2020-03-31 18:24:39] [ERRO] [rest] hh
+[2020-03-31 18:24:39] [INFO] HEllo
+[2020-03-31 18:24:49] [DEBU] 调试模式已开启
+[2020-03-31 18:24:50] [ERRO] [rest] hh
+[2020-03-31 18:24:50] [INFO] HEllo
+[2020-03-31 18:25:25] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:25:25] [INFO] [9ec5fc61-120c-4195-a8c6-dda4709ef2d3] [GET /status 200] | 200 |      2.7822ms |             ::1 | GET | /status |
+[2020-03-31 18:25:59] [DEBU] 调试模式已开启
+[2020-03-31 18:25:59] [ERRO] [rest] hh
+[2020-03-31 18:25:59] [INFO] HEllo
+[2020-03-31 18:25:59] [DEBU] 调试模式已开启
+[2020-03-31 18:25:59] [ERRO] [rest] hh
+[2020-03-31 18:25:59] [INFO] HEllo
+[2020-03-31 18:26:05] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:26:05] [INFO] [02aa6ff6-68c5-4d8a-992c-185c4fb0ab61] [949.6µs] [GET /status 200] | 200 |       949.6µs |             ::1 | GET | /status |
+[2020-03-31 18:29:56] [DEBU] 调试模式已开启
+[2020-03-31 18:29:56] [ERRO] [rest] hh
+[2020-03-31 18:29:56] [INFO] HEllo
+[2020-03-31 18:30:27] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:30:27] [INFO] [570fa536-e7b2-42a4-9884-23b0ecc155b8] [2.3077ms] [GET /status 200] | 200 |      2.3077ms |             ::1 | GET | /status |
+[2020-03-31 18:30:35] [DEBU] 调试模式已开启
+[2020-03-31 18:30:35] [ERRO] [rest] hh
+[2020-03-31 18:30:35] [INFO] HEllo
+[2020-03-31 18:30:43] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:30:43] [INFO] [7a6af9f1-2661-4286-8585-0d46101db8d1] [914.5µs] [GET /status 200] IP: ::1  UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4086.0 Safari/537.36 Edg/83.0.461.1
+[2020-03-31 18:31:51] [DEBU] 调试模式已开启
+[2020-03-31 18:31:51] [ERRO] [rest] hh
+[2020-03-31 18:31:51] [INFO] HEllo
+[2020-03-31 18:32:12] [DEBU] 调试模式已开启
+[2020-03-31 18:32:12] [ERRO] [rest] hh
+[2020-03-31 18:32:12] [INFO] HEllo
+[2020-03-31 18:40:06] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:40:06] [INFO] [75d3daf2-caf4-4808-b364-e029a1acecb6] [2.1668ms] [GET /status 200] IP: ::1  UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4086.0 Safari/537.36 Edg/83.0.461.1
+[2020-03-31 18:43:31] [DEBU] 调试模式已开启
+[2020-03-31 18:43:31] [ERRO] [rest] hh
+[2020-03-31 18:43:31] [INFO] HEllo
+[2020-03-31 18:43:57] [DEBU] 调试模式已开启
+[2020-03-31 18:43:57] [ERRO] [rest] hh
+[2020-03-31 18:43:57] [INFO] HEllo
+[2020-03-31 18:44:19] [ERRO] 无法连接至 RCON dial tcp 127.0.0.1:25575: connect: connection refused
+[2020-03-31 18:44:19] [INFO] [86a3d609-4b37-414b-837a-203e5197ca67] [800.7µs] [GET /status 200] IP: ::1  UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4086.0 Safari/537.36 Edg/83.0.461.1

@@ -1,3 +1,14 @@
+/*
+ * Package models
+ * File: user.go
+ * Project: SXYGo
+ * File Created: 2020-03-29 15:34:14
+ * Author: sunxyw <xy2496419818@gmail.com>
+ * -----
+ * Last Modified: 2020-03-29 17:36:16
+ * Modified By: sunxyw <xy2496419818@gmail.com>
+ */
+
 package models
 
 import (
@@ -7,7 +18,7 @@ import (
 
 // User 用户模型
 type User struct {
-	gorm.models
+	gorm.Model
 	UserName       string
 	PasswordDigest string
 	Nickname       string

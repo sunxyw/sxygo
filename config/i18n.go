@@ -1,18 +1,29 @@
+/*
+ * Package config
+ * File: i18n.go
+ * Project: SXYGo
+ * File Created: 2020-03-29 15:34:02
+ * Author: sunxyw <xy2496419818@gmail.com>
+ * -----
+ * Last Modified: 2020-03-29 19:4:45
+ * Modified By: sunxyw <xy2496419818@gmail.com>
+ */
+
 package config
 
 import (
-	"io/ioutils"
+	"io/ioutil"
 	"strings"
 
 	yaml "gopkg.in/yaml.v2"
 )
 
-// Dictinary 字典
-var Dictinary *map[interface{}]interface{}
+// Dictionary 字典
+var Dictionary *map[interface{}]interface{}
 
 // LoadLocales 读取国际化文件
 func LoadLocales(path string) error {
-	data, err := ioutils.ReadFile(path)
+	data, err := ioutil.ReadFile(path)
 	if err != nil {
 		return err
 	}
@@ -23,14 +34,14 @@ func LoadLocales(path string) error {
 		return err
 	}
 
-	Dictinary = &m
+	Dictionary = &m
 
 	return nil
 }
 
 // T 翻译
 func T(key string) string {
-	dic := *Dictinary
+	dic := *Dictionary
 	keys := strings.Split(key, ".")
 	for index, path := range keys {
 		// 如果到达了最后一层，寻找目标翻译

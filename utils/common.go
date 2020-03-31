@@ -1,3 +1,14 @@
+/*
+ * Package utils
+ * File: common.go
+ * Project: SXYGo
+ * File Created: 2020-03-29 17:11:50
+ * Author: sunxyw <xy2496419818@gmail.com>
+ * -----
+ * Last Modified: 2020-03-29 17:33:22
+ * Modified By: sunxyw <xy2496419818@gmail.com>
+ */
+
 package utils
 
 import (
@@ -5,7 +16,7 @@ import (
 	"time"
 )
 
-// RandStringRunes 返回随机字符串
+// RandStringRunes 生成随机字符串
 func RandStringRunes(n int) string {
 	var letterRunes = []rune("1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 

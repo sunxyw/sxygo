@@ -1,3 +1,9 @@
+Logger:
+    Fatal: "致命"
+    Error: "错误"
+    Warning: "警告"
+    Info: "信息"
+    Debug: "调试"
 Tag:
     required: "必须存在，而且不能为空"
     min: "不够长"
@@ -7,4 +13,4 @@ Field:
     Nickname: "用户昵称"
     UserName: "用户名"
     Password: "密码"
-    Passwordconfigirm: "密码校验"
+    PasswordConfirm: "密码校验"

@@ -1,3 +1,14 @@
+/*
+ * Package middleware
+ * File: cors.go
+ * Project: SXYGo
+ * File Created: 2020-03-29 15:33:50
+ * Author: sunxyw <xy2496419818@gmail.com>
+ * -----
+ * Last Modified: 2020-03-29 17:37:03
+ * Modified By: sunxyw <xy2496419818@gmail.com>
+ */
+
 package middleware
 
 import (
@@ -9,15 +20,15 @@ import (
 
 // Cors 跨域配置
 func Cors() gin.HandlerFunc {
-	configig := cors.Defaultconfigig()
-	configig.AllowMethods = []string{"GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"}
-	configig.AllowHeaders = []string{"Origin", "Content-Length", "Content-Type", "Cookie"}
+	config := cors.DefaultConfig()
+	config.AllowMethods = []string{"GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"}
+	config.AllowHeaders = []string{"Origin", "Content-Length", "Content-Type", "Cookie"}
 	if gin.Mode() == gin.ReleaseMode {
 		// 生产环境需要配置跨域域名，否则403
-		configig.AllowOrigins = []string{"http://www.example.com"}
+		config.AllowOrigins = []string{"http://www.example.com"}
 	} else {
 		// 测试环境下模糊匹配本地开头的请求
-		configig.AllowOriginFunc = func(origin string) bool {
+		config.AllowOriginFunc = func(origin string) bool {
 			if regexp.MustCompile(`^http://127\.0\.0\.1:\d+$`).MatchString(origin) {
 				return true
 			}
@@ -27,6 +38,6 @@ func Cors() gin.HandlerFunc {
 			return false
 		}
 	}
-	configig.AllowCredentials = true
-	return cors.New(configig)
+	config.AllowCredentials = true
+	return cors.New(config)
 }

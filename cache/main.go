@@ -1,8 +1,19 @@
+/*
+ * Package cache
+ * File: main.go
+ * Project: SXYGo
+ * File Created: 2020-03-29 15:34:02
+ * Author: sunxyw <xy2496419818@gmail.com>
+ * -----
+ * Last Modified: 2020-03-29 22:51:04
+ * Modified By: sunxyw <xy2496419818@gmail.com>
+ */
+
 package cache
 
 import (
-	"os"
 	"lwgo/utils"
+	"os"
 	"strconv"
 
 	"github.com/go-redis/redis"
@@ -24,7 +35,7 @@ func Redis() {
 	_, err := client.Ping().Result()
 
 	if err != nil {
-		utils.Log().Panic("连接Redis不成功", err)
+		utils.Log().Fatalf("连接Redis不成功 %v", err)
 	}
 
 	RedisClient = client

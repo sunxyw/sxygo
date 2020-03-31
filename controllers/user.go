@@ -1,8 +1,19 @@
+/*
+ * Package controllers
+ * File: user.go
+ * Project: SXYGo
+ * File Created: 2020-03-29 15:34:30
+ * Author: sunxyw <xy2496419818@gmail.com>
+ * -----
+ * Last Modified: 2020-03-30 18:10:13
+ * Modified By: sunxyw <xy2496419818@gmail.com>
+ */
+
 package controllers
 
 import (
-	"lwgo/transformers"
 	"lwgo/services"
+	"lwgo/transformers"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
@@ -10,9 +21,9 @@ import (
 
 // UserRegister 用户注册接口
 func UserRegister(c *gin.Context) {
-	var services services.UserRegisterservices
-	if err := c.ShouldBind(&services); err == nil {
-		res := services.Register()
+	var service services.UserRegisterService
+	if err := c.ShouldBind(&service); err == nil {
+		res := service.Register()
 		c.JSON(200, res)
 	} else {
 		c.JSON(200, ErrorResponse(err))
@@ -21,9 +32,9 @@ func UserRegister(c *gin.Context) {
 
 // UserLogin 用户登录接口
 func UserLogin(c *gin.Context) {
-	var services services.UserLoginservices
-	if err := c.ShouldBind(&services); err == nil {
-		res := services.Login(c)
+	var service services.UserLoginService
+	if err := c.ShouldBind(&service); err == nil {
+		res := service.Login(c)
 		c.JSON(200, res)
 	} else {
 		c.JSON(200, ErrorResponse(err))
@@ -43,7 +54,7 @@ func UserLogout(c *gin.Context) {
 	s.Clear()
 	s.Save()
 	c.JSON(200, transformers.Response{
-		Code: 0,
-		Msg:  "登出成功",
+		Code:    0,
+		Message: "登出成功",
 	})
 }
