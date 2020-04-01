@@ -15,6 +15,7 @@ require (
 	github.com/gin-contrib/sessions v0.0.0-20190512062852-3cb4c4f2d615
 	github.com/gin-gonic/gin v1.4.0
 	github.com/go-delve/delve v1.4.0 // indirect
+	github.com/go-playground/validator/v10 v10.2.0
 	github.com/go-redis/redis v6.15.3+incompatible
 	github.com/gookit/color v1.2.3
 	github.com/howeyc/fsnotify v0.9.0 // indirect

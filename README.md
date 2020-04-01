@@ -18,6 +18,7 @@ LwGO: 基于 [Singo](https://github.com/Gourouting/singo) 的简单框架
 9. [Logrus](https://github.com/sirupsen/logrus)：知名的日志系统
 10. 自行实现了生成 RequestID 及记录请求信息的中间件
 11. 实现了日志分割功能，默认每天分割一次日志文件
+12. [Validator](https://github.com/go-playground/validator)：一个简单的验证器
 
 本项目已经预先实现了一些常用的代码方便参考和复用：
 
